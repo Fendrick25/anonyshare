@@ -1,0 +1,14 @@
+{
+  "namespace": "com.anonyshare.kafka.model",
+  "type": "record",
+  "name": "CommentDeletedAvroModel",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    }
+  ]
+}

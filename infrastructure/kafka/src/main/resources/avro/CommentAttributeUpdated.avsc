@@ -1,0 +1,22 @@
+{
+  "namespace": "com.anonyshare.kafka.model",
+  "type": "record",
+  "name": "CommentAttributeUpdatedAvroModel",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "likesCount",
+      "type": "int"
+    },
+    {
+      "name": "dislikeCount",
+      "type": "int"
+    }
+  ]
+}

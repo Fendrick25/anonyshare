@@ -1,0 +1,16 @@
+{
+  "namespace": "com.anonyshare.kafka.model",
+  "type": "record",
+  "name": "CommentUpdatedAvroModel",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {"name": "content", "type": "string"},
+    {"name": "updatedAt", "type": "long"}
+  ]
+}

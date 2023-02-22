@@ -1,0 +1,38 @@
+{
+  "namespace": "com.anonyshare.kafka.model",
+  "type": "record",
+  "name": "CommentAvroModel",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+      "type": "string",
+      "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "postId",
+      "type": {
+      "type": "string",
+      "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "user",
+      "type": {
+        "type": "record",
+        "name": "UserAvroModel",
+        "fields": [
+          {"name": "id", "type": "string"},
+          {"name": "username", "type": "string"},
+          {"name": "imageUrl", "type": "string"}
+        ]
+    }
+    },
+    {"name": "content", "type": "string"},
+    {"name": "likesCount", "type": "int"},
+    {"name": "dislikeCount", "type": "int"},
+    {"name": "createdAt", "type": "long"},
+    {"name": "updatedAt", "type": "long"}
+  ]
+}

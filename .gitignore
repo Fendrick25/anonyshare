@@ -1,0 +1,18 @@
+# Default ignored files
+/shelf/
+/.idea/
+*.iws
+*.iml
+*.ipr
+
+**/volumes/kafka/broker-1/*
+**/volumes/kafka/broker-2/*
+**/volumes/kafka/broker-3/*
+**/volumes/zookeeper/data/*
+**/volumes/zookeeper/transactions/*
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/src/main/**/target/
+**/src/test/**/target/
